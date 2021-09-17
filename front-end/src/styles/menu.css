@@ -1,0 +1,15 @@
+.dashboard-menu {
+  background-color: #17171a;
+}
+
+.dashboard-menu ul {
+  color: white;
+  padding: 0px;
+}
+
+.dashboard-menu ul li {
+  list-style-type: none;
+  border-top: white solid 0.1rem;
+  padding: 0 0 0.2rem 0.2rem;
+}
+/*# sourceMappingURL=menu.css.map */
