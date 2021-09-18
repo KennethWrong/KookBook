@@ -20,6 +20,11 @@ body{
 
     .menu-language{
         @apply text-white text-lg border-b-2 border-pink-200 pl-2
-        flex-auto
+         hover:bg-green-600
+        flex flex-row flex-wrap justify-between p-1
+    }
+
+    .search-note{
+        @apply focus:ring-2 focus:ring-blue-600 p-1 focus:text-blue-400 
     }
 }
