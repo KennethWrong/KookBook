@@ -1,9 +1,6 @@
-import './styles/code.css'
-
-
 function Code() {
   return (
-    <div class='code'>
+    <div className='col-start-4 col-end-10 row-start-1 row-end-6 bg-white'>
       <code>Hello World!</code>
     </div>
   );

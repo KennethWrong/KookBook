@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: rgb(41, 41, 58);
+}
+
+@layer components {
+
+    .nav-items{
+        @apply border-b-2  border-pink-300 hover:border-purple-300 hover:text-pink-300
+    }
+
+    .create-note-button{
+        @apply border-2  border-transparent rounded-md
+         text-white  bg-green-500 text-center hover:text-white p-1
+         hover:bg-green-400
+    }
+
+    .menu-language{
+        @apply text-white text-lg border-b-2 border-pink-200 pl-2
+        flex-auto
+    }
+}
