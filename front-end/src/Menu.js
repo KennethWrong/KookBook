@@ -1,4 +1,5 @@
 import NoteDivision from "./NoteDivision";
+import SearchNote from "./SearchNote";
 
 function Menu() {
   let dummy = [
@@ -6,38 +7,40 @@ function Menu() {
       'note-count':0
     },
    {'name':"Python",
-    'note-count':0
+    'note-count':1,
+    'notes':{
+      '1512352':'Python best practices'
+    }
   }, 
    {'name':"C++",
    'note-count':3,
    'notes':{
-    '1':'List comprehensions',
-    '2':'Best way to create a lambda function',
-    '3':'Sckitlearn'
+    '1134':'List comprehensions',
+    '2415':'Best way to create a lambda function',
+    '351235':'Sckitlearn'
   }
 }, 
    {'name':"TypeScript",
    'note-count':3,
    'notes':{
-    '1':'Difference between typescript and javascript',
-    '2':'variable declaration',
-    '3':'Number of trials'
+    '512352':'Difference between typescript and javascript',
+    '314325':'variable declaration',
+    '6346236':'Number of trials'
   }
 }, 
    {'name':"Java",
    'note-count':3,
    'notes':{
-      '1':'How to be a better programmer',
-      '2':'SpringBoot',
-      '3':'MVC'
+      '45678322':'How to be a better programmer',
+      '4234123':'SpringBoot',
+      '54532523':'MVC'
     }
    },
   ]
 
-
   return (
     <div className='col-start-1 col-end-4 row-start-1 row-end-6 bg-gray-600 shadow-md rounded-md'>
-      <input className='search-note' placeholder="Search for note"></input>
+    <SearchNote dummy={dummy} />
 <button onClick={()=>console.log('hi')} className='create-note-button'>Create Note</button>
       {mapLogos(dummy)}
     </div>
