@@ -14,7 +14,6 @@ const DisSearchRes = (props) => {
 }
 
 const truncate_string = (title) => {
-    let truncated = ''
     if (title.length > 30){
         let truncated = title.substring(0,28)
         return truncated.trim()+'...'

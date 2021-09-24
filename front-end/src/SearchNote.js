@@ -27,7 +27,8 @@ const SearchNote = (props) => {
             <input type='text'value={noteSearching} className='search-note' 
             placeholder="Search for note" 
             onChange={(e)=>setNoteSearching(e.target.value)} 
-            onFocus={() => setFocused(!focused)}>
+            onFocus={() => setFocused(true)}
+            onBlur={() => setTimeout(() => setFocused(false), 180)}>
             </input>
             {focused?<DisSearchRes notes={noteDisplay} />:null}
         </div>

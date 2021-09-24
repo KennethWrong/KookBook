@@ -41,8 +41,8 @@ function Menu() {
   return (
     <div className='col-start-1 col-end-4 row-start-1 row-end-6 bg-gray-600 shadow-md rounded-md'>
     <SearchNote dummy={dummy} />
-<button onClick={()=>console.log('hi')} className='create-note-button'>Create Note</button>
-      {mapLogos(dummy)}
+<button onClick={()=>console.log("Hola")} className='create-note-button'>Create Note</button>
+    {mapLogos(dummy)}
     </div>
   );
 }
@@ -58,5 +58,5 @@ function mapLogos(dummy){
 }
 
 
-//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 
+//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
 export default Menu;
