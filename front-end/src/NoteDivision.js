@@ -14,7 +14,7 @@ if (language['note-count'] > 0) {
           <button onClick={()=>setShow(!show)}>
               <div className='menu-language  border-0 full-width'>
                   <div className='flex flex-row'>
-                    <img src={`./assets/images/${language['name'].toLowerCase()}.png`} className='object-scale-down h-5 mr-1'alt="arrow"/>
+                    <img src={`./assets/images/${language['name'].toLowerCase()}.png`} className='object-scale-down h-5 mr-1'alt="language-icon"/>
                     {language['name']} 
                   </div>
                   <div className='px-0 mr-0 flex flex-row'>

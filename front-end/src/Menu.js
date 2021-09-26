@@ -1,5 +1,6 @@
 import NoteDivision from "./NoteDivision";
 import SearchNote from "./SearchNote";
+import {useHistory} from 'react-router-dom'
 
 function Menu() {
   let dummy = [
@@ -38,10 +39,16 @@ function Menu() {
    },
   ]
 
+  const history = useHistory()
+  const routeChange = () => {
+    let path = '/create-note'
+    history.push(path)
+  }
+
   return (
     <div className='col-start-1 col-end-4 row-start-1 row-end-6 bg-gray-600 shadow-md rounded-md'>
     <SearchNote dummy={dummy} />
-<button onClick={()=>console.log("Hola")} className='create-note-button'>Create Note</button>
+<button onClick={routeChange} className='create-note-button'>Create Note</button>
     {mapLogos(dummy)}
     </div>
   );

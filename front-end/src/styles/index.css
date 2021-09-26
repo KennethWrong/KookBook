@@ -27,4 +27,8 @@ body{
     .search-note{
         @apply focus:ring-2 focus:ring-blue-600 p-1 focus:text-blue-400 
     }
+
+    .create-note-input-field{
+        @apply mt-2 h-11 p-3 max-w-md focus:border-pink-500 border-2 focus:border-current rounded-lg
+    }
 }
